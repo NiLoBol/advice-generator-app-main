@@ -1,0 +1,73 @@
+:root {
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--DarkBlue);
+    padding: 0px;
+    margin: 0px;
+}
+
+.card {
+
+    text-align: center;
+    width: 30rem;
+    max-width: 70vw;
+    background: var(--DarkGrayishBlue);
+    padding: 3rem 3rem 0 3rem;
+    border-radius: 15px;
+}
+
+.head {
+    color: var(--NeonGreen);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#title {
+    color: var(--LightCyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relative {
+    position: relative;
+    top: 35px;
+}
+
+.dice {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: var(--NeonGreen);
+    border: none;
+    border-radius: 50px;
+}
+img{
+    width: 100%;
+}
+.dice:hover {
+    box-shadow: var(--NeonGreen) 0px 5px 50px;
+}
+h1{
+    font-size: 28px;
+}
+@media (max-width: 425px) {
+    .card {
+        width: 15rem;
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+}
